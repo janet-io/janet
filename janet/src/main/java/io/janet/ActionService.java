@@ -33,7 +33,7 @@ public abstract class ActionService {
      */
     abstract protected Class getSupportedAnnotationType();
 
-    void setCallback(Callback callback) {
+    protected void setCallback(Callback callback) {
         this.callback = callback;
     }
 
