@@ -37,7 +37,7 @@ public abstract class ActionService {
         this.callback = callback;
     }
 
-    interface Callback {
+    protected interface Callback {
         void onStart(ActionHolder action);
         void onProgress(ActionHolder action, int progress);
         void onSuccess(ActionHolder action);
