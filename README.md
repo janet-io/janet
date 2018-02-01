@@ -64,7 +64,8 @@ Currently there are:
 
 * [HttpActionService](https://github.com/techery/janet-http) to provide HTTP/HTTPS requests execution;
 * [AsyncActionService](https://github.com/techery/janet-async) to provide support for async protocols, e.g. [socket.io](http://socket.io/);
-* [CommandActionService](https://github.com/techery/janet-command) to delegate job back to command `action`.
+* [CommandActionService](https://github.com/techery/janet-command) to delegate job back to command `action`;
+* [AnalyticsActionSerivce](https://github.com/techery/janet-analytics) to extract analytics out of business/view logic;
    
 Possible solutions: 
 `SqlActionService`, `LocationActionService`, `BillingActionService`, etc.
@@ -189,8 +190,8 @@ Possible solutions: caching middleware, `Dagger` injector, retry policy maker, e
 3. Throw-safety architecture.
 
 ## Download 
-[![](https://jitpack.io/v/techery/janet.svg)](https://jitpack.io/#techery/janet)
-[![Build Status](https://travis-ci.org/techery/janet.svg?branch=master)](https://travis-ci.org/techery/janet)
+[![](https://jitpack.io/v/janet-io/janet.svg)](https://jitpack.io/#janet-io/janet)
+[![Build Status](https://travis-ci.org/janet-io/janet.svg?branch=master)](https://travis-ci.org/janet-io/janet)
 
 Grab via Maven
 ```xml
@@ -202,7 +203,7 @@ Grab via Maven
 </repositories>
 
 <dependency>
-    <groupId>com.github.techery</groupId>
+    <groupId>com.github.janet-io</groupId>
     <artifactId>janet</artifactId>
     <version>latestVersion</version>
 </dependency>
@@ -214,13 +215,13 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 dependencies {
-    compile 'com.github.techery:janet:latestVersion'
+    compile "com.github.janet-io:janet:$latestVersion"
 }
 ```
 
 ## License
 
-    Copyright (c) 2016 Techery
+    Copyright (c) 2018 Techery
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
